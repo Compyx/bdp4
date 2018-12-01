@@ -37,3 +37,16 @@ BDP 4 also has a sprite editor which can be used to overlay sprites on the bitma
 ![Sprite editor](https://raw.githubusercontent.com/compyx/bdp4/master/sprite-editor-screenshot.png)
 
 <sub>Yup, I painted that sprite today, I still got it :)</sub>
+
+#### Interface
+- space = pixel
+- 1-4 = select color (in multi color mode. 1 being $d020)
+- F1 = goto placement mode: use cursor keys (and 1-8 to select sprites) to place a sprite on the bitmap. Haven't really figured this one out yet.
+- F3 = switch to single color mode
+- F5 = switch to multi color mode
+- X = switch X-expand
+= Y = switch Y-expand
+
+There are more keys, such as mirroring sprites over X/Y axis
+
+
