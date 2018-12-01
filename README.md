@@ -3,7 +3,7 @@
 This project is an attempt to deconstruct (and perhaps reconstruct) my old multicolor bitmap editor called "Boogie Down Paint 4.0+". I've used this editor exclusively during my C64 demo scene days since 1992 until I dropped out of the scene around 1995.
 Since I only have this binary left, and it doesn't appear to contain any help screen, I decided to rip this apart.
 
-# The main editor
+## The main editor
 
 Since there's no built in help, this is currently incomplete until I disassemble the main menu event handling:
 
@@ -13,6 +13,15 @@ Since there's no built in help, this is currently incomplete until I disassemble
 - @ start the bitmap fade editor
 - \* starts the sprite editor
 - <- (left arrow) enters the disk menu
+
+### Disk menu
+
+The disk menu is extremely primitive:
+
+![Disk nemu](https://raw.githubusercontent.com/compyx/bdp4/master/disk-menu-screenshot.png)
+
+Options 1 & 2 seem to load/save Koala pictures, requiring the "/x81PIC" prefix, though not when entering the filename.
+Options 3 & 4 use BDP4's own format: a very lame RLE implementation. But hey, back then I didn't have internet, so I was pretty proud of my "equal-byte-packer".
 
 
 ## It has sub-editors
